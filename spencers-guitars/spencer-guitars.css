@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+	/* border: 3px solid red; */
+}
+
+body {
+	background: rgba(0, 0, 0, .75) url("https://peprojects.dev/alpha-3/andrew/spencers-guitars/images/workspace.jpg");
+  	background-blend-mode: darken;
+	background-repeat: no-repeat;
+  	background-position: center;
+	font-family: sans-serif;
+	line-height: .3em;
+	letter-spacing: .3em;
+}
+
+.inner-column {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ----header styles---- */
+
+header {
+	text-align: center;
+}
+
+h1 {
+	font-size: 38pt;
+	font-weight: lighter;
+	font-family: cursive;
+	color: whitesmoke;
+	padding: 20px;
+	
+}
+
+h2 {
+	font-size: 26pt;
+	font-weight: lighter;
+	color: whitesmoke;
+	padding: 20px;
+}
+
+.a1, .tele{
+	width: 400px;
+	height: 500px;
+	max-height: 100%;
+	max-width: 100%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+/* ----footer styles---- */
+
+footer {
+	text-align: center;
+	padding: 40px;
+	color: floralwhite;
+}
+
+.a2 {
+	font-size: 20px;
+	font-weight: lighter;
+	color: floralwhite;
+	text-decoration: none;
+}
+
+.a2:hover {
+  	color: deepskyblue;
+}

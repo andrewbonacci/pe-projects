@@ -1,0 +1,105 @@
+* body {
+	box-sizing: border-box;
+	letter-spacing: 0.02em;
+	font-family: sans-serif;
+}
+
+header {
+	padding: 30px;
+}
+
+.inner-column {
+	max-width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a {
+	text-decoration: none;
+	color: green;
+	padding: 12px;
+}
+
+.crozer-logo {
+	width: 200px;
+	float: left;
+	margin-top: -10px;
+}
+
+.right-nav {
+	position: relative;
+	float: right;
+}
+
+.green-bar {
+	background-color: #006a5b;
+	padding: 15px;
+}
+
+.green-nav {
+  text-align: center;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+.a1 {
+	text-decoration: none;
+	color: white;
+	padding: 12px;
+}
+
+.nav-mini {
+	padding: 70px 0px 0px 0px;
+}
+
+.a2 {
+	text-decoration: underline;
+}
+
+article {
+	background-color: #e9eff2;
+	color: #3c413f;
+}
+
+.content-column {
+	max-width: 800px;
+	line-height: 1.5;
+}
+
+.services {
+	width: 450px;
+	float: right;
+	padding: 20px;
+	
+}
+
+.patch-logo {
+	width: 400px;
+	height: 400px;
+	float: right;
+	padding: 5px;
+}
+
+.contact-column {
+	padding: 70px 0px 0px 0px;
+}
+
+.a3 {
+	display: block;
+	color: #3c413f;
+	text-decoration: underline;
+}
+
+.a4 {
+	display: block;
+	color: green;
+	text-decoration: underline;
+}
+
+span {
+	font-weight: bold;
+}
+
+.bottom {
+	width: 250px;
+}
