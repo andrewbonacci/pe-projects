@@ -1,0 +1,99 @@
+@import 'reset.css';
+
+html {
+	background-color: #faf1e2;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* site structure */
+
+.inner-column {
+	max-width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 30px 14px;
+}
+
+
+/* typography */
+
+h1 {
+	font-size: 40px;
+	font-family: sans-serif;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: sans-serif;
+}
+
+p {
+	font-size:  16px;
+	font-family: sans-serif;
+	line-height: 1.4;
+}
+
+p + p {
+	margin-top: 14px;
+}
+
+h1 + p {
+	margin-top:  14px;
+} 
+
+h2 + p {
+	margin-top: 14px;
+}
+
+/* site sections */
+
+.site-header {
+	background-color: #9eb9ec;
+	position:  sticky;
+	top: 0;
+	box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.4) ;
+	/*border: 10px solid green;*/
+}
+
+.site-header .inner-column {
+	padding: 14px;
+}
+
+.page-content {
+	background-image: url("https://images.unsplash.com/photo-1596226799589-ea489243e102?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2796&q=80");
+	background-size: cover;
+	background-position: center 25%;
+	/*border: 10px solid yellow;*/
+	flex-grow: 1; /* TRUE [1 is true and 0 is false]*/
+} 
+
+.page-header {
+	background-color: rgba(255,255,255,0.4);
+
+}
+
+.about {
+	background-color: #9eb9ec;
+}
+
+.contact {
+	color: white;
+	text-shadow: -1px 1px 0 black;
+}
+
+.site-footer {
+	background-color: #333;
+	color: white;
+	/*border: 10px solid white;*/
+}
+
+@media (min-width: 700px) {
+	.site-header, .contact {
+		background-color: transparent;
+	}
+}
