@@ -1,0 +1,34 @@
+/* THIS LIST IS NOT COMPLETE. 
+IT IS WHAT I ADDED BASED ON WHAT I LEARNED SO FAR.
+ FUTURE VERSIONS WILL COME. */
+/* ------- */
+
+/* this justifies content to its starting point */
+
+.parent {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+
+/* this justifies content to the right of a page */
+
+.parent {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: stretch;
+}
+
+/* flex-wrap: wrap; prevents items from breaking through a box of content */
+
+.parent {
+	flex-wrap: wrap;
+}
+
+/* this puts items in an up-down column */
+
+.parent {
+	flex-direction: column;
+}
