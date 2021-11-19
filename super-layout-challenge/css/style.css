@@ -1,0 +1,275 @@
+/* SETUP */
+
+@import 'reset.css';
+
+* { 
+	box-sizing: border-box;
+}
+
+html {
+	background-color: rgba(143, 255, 255, 0.4);
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+p a {
+	display: inline;
+	color: blue;
+	text-decoration: underline; 
+}
+
+picture {
+	display: block;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+svg {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+
+/* ACCESSIBILITY */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+
+
+/* STRUCTURE */
+inner-column {
+	display: block;
+	width: 100%;
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+}
+
+
+
+/* MODULE */
+masthead {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+masthead .company-logo {
+	max-width: 144px;
+	margin-right: 15px;
+}
+
+masthead .company-name {
+	font-family: sans-serif;
+}
+
+plan-grid {
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+plan {
+	display: block;
+	padding: 10px;
+}
+
+plan picture {
+	max-width: 100px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+plan .heading {
+	font-family: sans-serif;
+	font-size: 24px;
+}
+
+h3 {
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+p {
+	margin-bottom: 15px;
+}
+
+
+
+
+
+
+@media (min-width: 600px) {
+	plan {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 20px;
+	}
+}
+
+
+
+@media (min-width: 800px) {
+	plan-grid {
+		display: flex;
+		flex-direction: row;
+	}
+	plan {
+		width: 33%;
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+
+
+.splash inner-column {
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.splash h1 {
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 20px 0;
+}
+
+.splash .cloud {
+	display: none;
+}
+
+.raindrop {
+	display: none;
+}
+
+
+
+/* BREAKPOINT 1 */
+@media (min-width: 600px) {
+	.splash inner-column {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+		.splash picture {
+		margin-right: 20px;
+		flex-basis: 50%;
+	}
+
+		.splash .info {
+		flex-basis: 50%;
+	}
+
+		.splash h1 {
+		font-size: 25px;
+	}
+
+	footer a {
+		display: inline-block;
+		margin-right: 10px;
+	}
+}
+
+
+
+/* BREAKPOINT 2 */
+@media (min-width: 800px) {
+
+	.splash {
+		overflow: hidden;
+	}
+
+	.splash inner-column {
+		align-items: flex-start;
+		position: relative;
+	}
+
+	.splash picture {
+		flex-basis: 40%;
+	}
+
+	.splash .info {
+		flex-basis: 55%;
+		max-width: 60ch;
+	}
+
+	.splash h1 {
+		font-size: 30px;
+	}
+
+	.splash .cloud {
+		display: block;
+		width: 200px;
+		position: absolute;
+		right: 20%;
+		bottom: -70px;
+		opacity: .5;
+	}
+}
+
+
+
+/* THEME */
+.site-header {
+	background-color: rgba(126, 177, 255, 0.5);
+}
+
+section.plans {
+	background-color: rgba(126, 177, 255, 0.5);
+	position: relative;
+	overflow: hidden;
+}
+
+section.plans .raindrop {
+	display: block;
+	width: 200px;
+	height: 200px;
+	background-image: url("https://peprojects.dev/alpha-3/andrew/super-layout-challenge/images/raindrop.png");
+	background-size: cover;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	pointer-events: none;
+}
+
+@media (min-width: 600px) {
+	section.plans .raindrop {
+		display: block;
+		opacity: 0.5;
+	}
+}
+
+
+footer a {
+	padding: 5px;
+}
+
+
+.site-footer {
+	background-color: rgba(126, 179, 255, 0.9);
+	min-height: 400px;
+}
+
