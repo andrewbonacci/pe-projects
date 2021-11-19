@@ -1,7 +1,4 @@
-		
-
 <?php include("header.php"); ?>
-
 
 <section>
 	<h2>This is still PHP stitching!</h2>

@@ -1,4 +1,4 @@
-	<!doctype html>
+<!doctype html>
 <html lang='en'>
 
 	<head>
@@ -14,11 +14,11 @@
 
 		<header>
 			<div class="inner-column">
-				<h1>This is PHP stitching!</h1>
+				<h1>This is PHP stitching (header)</h1>
 				<nav></nav>
 			</div>
 		</header>
 
 		<main>
-		<--CONTENT HERE-->
+		<!--CONTENT HERE-->
 	
