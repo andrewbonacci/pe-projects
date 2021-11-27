@@ -57,10 +57,26 @@ svg {
 inner-column {
 	display: block;
 	width: 100%;
-	max-width: 900px;
+	max-width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 10px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.page-content {
+	flex-grow: 2;
+	display: flex;
+	flex-direction: column;
+}
+
+.plans {
+	flex-grow: 1;
 }
 
 
@@ -82,20 +98,19 @@ masthead .company-name {
 }
 
 plan-grid {
-	display: block;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	display: grid;
+	grid-gap: 50px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 plan {
 	display: block;
-	padding: 10px;
 }
 
 plan picture {
 	max-width: 100px;
 	border-radius: 50%;
-	margin-bottom: 10px;
 	overflow: hidden;
 }
 
@@ -113,35 +128,75 @@ p {
 	margin-bottom: 15px;
 }
 
+plan .link {
+	margin-top: 20px;
+	text-decoration: underline;
+}
+
+plan-grid {
+	display: grid;
+	grid-gap: 50px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
 
 
 
+@media (min-width: 479px) {
+	plan picture {
+		margin-bottom: 10px;
+	}
+}
 
-
-@media (min-width: 600px) {
+@media (min-width: 480px) {
 	plan {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		gap: 20px;
+	}
+
+		plan picture {
+		max-width: 130px;
 	}
 }
 
-
+@media (min-width: 480px) and (max-width: 799px) {
+	plan .copy-group {
+		margin-left: 20px;
+	}
+}
 
 @media (min-width: 800px) {
 	plan-grid {
-		display: flex;
-		flex-direction: row;
+  		grid-gap: 20px;
+  		grid-template-columns: 1fr 1fr 1fr;
 	}
+
 	plan {
-		width: 33%;
 		flex-direction: column;
 		text-align: center;
 	}
+
+	plan picture {
+		margin-bottom: 10px;
+	}
+
+	plan .copy-group {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	plan .link {
+		text-decoration: none;
+		background-color: rgba(0,0,0,.8);
+		color: white;
+		font-family: sans-serif;
+		text-transform: uppercase;
+		padding: 10px 20px;
+		border-radius: 20px;
+	}
 }
-
-
 
 .splash inner-column {
 	padding-top: 20px;
@@ -171,6 +226,7 @@ p {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		padding-top: 60px;
 	}
 
 		.splash picture {
@@ -195,8 +251,7 @@ p {
 
 
 /* BREAKPOINT 2 */
-@media (min-width: 800px) {
-
+@media (min-width: 900px) {
 	.splash {
 		overflow: hidden;
 	}
@@ -236,6 +291,26 @@ p {
 	background-color: rgba(126, 177, 255, 0.5);
 }
 
+
+section.splash {
+	position: relative;
+}
+
+section.splash .rain-drop-2 {
+	display: none;
+}
+
+@media (min-width: 1700px) {
+	section.splash .rain-drop-2 {
+		display: block;
+		width: 100%;
+		max-width: 250px;
+		position: absolute;
+		bottom: -100px;
+		left: 0px;
+	}
+}
+
 section.plans {
 	background-color: rgba(126, 177, 255, 0.5);
 	position: relative;
@@ -259,17 +334,29 @@ section.plans .raindrop {
 	section.plans .raindrop {
 		display: block;
 		opacity: 0.5;
+		pointer-events: none;
 	}
 }
 
-
-footer a {
-	padding: 5px;
+@media (min-width: 480px) and (max-width: 799px) {
+	section.plans inner-column {
+		max-width: 85%;
+	}
 }
-
 
 .site-footer {
 	background-color: rgba(126, 179, 255, 0.9);
-	min-height: 400px;
+	min-height: 200px;
 }
 
+nav.legal {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+nav.legal a {
+	padding: 20px;
+	font-family: sans-serif;
+}
