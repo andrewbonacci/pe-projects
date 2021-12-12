@@ -1,12 +1,8 @@
-
+@import 'meyer-reset.css';
 
 * {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-}
-
-* {
-	border: 3px solid green;
 }
 
 a {

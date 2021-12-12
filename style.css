@@ -1,12 +1,16 @@
 @import 'setup.css';
 @import 'meyer-reset.css';
 
+body * {
+	/*border: 3px solid skyblue;*/
+}
+
 body {
-	background-color: #FFFFFF;
+	background-color: rgb(25, 25, 25);
 }
 
 .inner-column {
-	max-width: 800px;
+	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -17,79 +21,80 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin-top: 20px;
 }
 
 .first-name {
-	font-family: helvetica;
+	font-family: 'Play', sans-serif;
 	font-size: 40px;
-	font-weight: lighter;
-	color: #FFFFFF;
+	font-weight: 400;
+	color: #FFD97F;
 	letter-spacing: .1em;
 	padding: 15px;
-	background-color: rgb(0, 64, 243);
-	border-radius: 15px;
+	border-top: 3px solid #FF9100;
+	border-right: 3px solid #FF9100;
 }
 
 .last-name {
-	font-family: helvetica;
+	font-family: 'Play', sans-serif;
 	font-size: 40px;
-	color: rgb(0, 64, 243);
+	font-weight: 700;
+	color: #FFD97F;
 	letter-spacing: .1em;
 	padding: 15px;
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid #FF9100;
 }
 
 .tagline {
-	font-family: helvetica;
-	font-size: 20px;
-	font-weight: lighter;
-	color: rgb(0, 64, 243);
-	letter-spacing: .05em;
+	font-family: 'Play', sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+	color: #FFD97F;
+	letter-spacing: .1em;
+	padding: 15px;
+	margin-top: 20px;
 	text-align: center;
 }
 
-.tagline span {
-	font-weight: bold;
+nav {
+	margin-top: 20px;
+	border-top: 3px dashed #FF9100;
+	border-bottom: 3px dashed #FF9100;
 }
 
-.contact {
+.nav-flex {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 20px;
 }
 
-.email, .phone {
-	font-family: helvetica;
-	font-size: 20px;
-	font-weight: lighter;
-	color: rgb(0, 64, 243);
+header nav a {
+	font-family: 'Play', sans-serif;
+	font-weight: 400;
+	color: #FFD97F;
 	letter-spacing: .1em;
-	padding: 10px;
-}
-
-.tagline-2 {
-	font-family: helvetica;
-	font-size: 20px;
-	font-weight: bold;
-	color: rgb(0, 64, 243);
-	letter-spacing: .05em;
+	padding: 15px;
+	border: 2px solid #FF9100;
+	border-radius: 15px;
+	margin-top: 20px;
+	min-width: 150px;
 	text-align: center;
-	padding: 20px;
 }
-/* ----END HEADER STYLING---- */
 
-
-
-/* ----DIVIDER STYLING---- */
-.page-divider {
-	display: block;
-	max-height: 30px;
-	background-color: rgb(0, 64, 243);
+header nav a:nth-of-type(3) {
+	margin-bottom: 20px;
 }
-/* ----END DIVIDER STYLING---- */
 
+header nav a:hover {
+-webkit-box-shadow: 0px 0px 30px 0px #FFB300;
+-moz-box-shadow: 0px 0px 30px 0px #FFB300;
+box-shadow: 0px 0px 30px 0px #FFB300;
+color: #FFD97F;
+border: 2px solid #FFB300;
+transition: .2s ease;
+}
 
-/* ----SECTION STYLING---- */
 
 
 
