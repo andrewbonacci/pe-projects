@@ -16,6 +16,8 @@ body {
 }
 
 
+
+
 /* ----HEADER STYLING---- */
 .name {
 	display: flex;
@@ -24,7 +26,7 @@ body {
 	margin-top: 20px;
 }
 
-.first-name {
+.andrew {
 	font-family: 'Play', sans-serif;
 	font-size: 40px;
 	font-weight: 400;
@@ -35,7 +37,7 @@ body {
 	border-right: 3px solid #FF9100;
 }
 
-.last-name {
+.bonacci {
 	font-family: 'Play', sans-serif;
 	font-size: 40px;
 	font-weight: 700;
@@ -46,7 +48,7 @@ body {
 	border-bottom: 3px solid #FF9100;
 }
 
-.tagline {
+.webdev {
 	font-family: 'Play', sans-serif;
 	font-size: 25px;
 	font-weight: 400;
@@ -58,6 +60,7 @@ body {
 }
 
 nav {
+	background-color: rgb(40, 40, 40);
 	margin-top: 20px;
 	border-top: 3px dashed #FF9100;
 	border-bottom: 3px dashed #FF9100;
@@ -94,9 +97,74 @@ color: #FFD97F;
 border: 2px solid #FFB300;
 transition: .2s ease;
 }
+/* ----END HEADER STYLING---- */
 
 
 
+
+/* ----BETWEEN-SPACE STYLING---- */
+.between-space {
+	height: 200px;
+	background-color: rgb(25, 25, 25);
+}
+/* ----END BETWEEN-SPACE STYLING---- */
+
+
+
+
+/* ----ABOUT ME STYLING---- */
+main #about {
+	background-color: rgb(40, 40, 40);
+	border-top: 3px dashed #FF9100;
+	border-bottom: 3px dashed #FF9100;
+}
+
+.about-flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about-h2 {
+	font-family: 'Play', sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+	color: #FFD97F;
+	letter-spacing: .1em;
+	padding: 15px;
+	text-align: center;
+}
+
+#about .p1 {
+	font-family: 'Play', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #FF9100;
+	padding: 10px;
+	width: 200px;
+	text-align: center;
+}
+
+#about .p2 {
+	font-family: 'Play', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #FFD97F;
+	padding: 10px;
+	width: 200px;
+	text-align: center;
+}
+
+#about a {
+	text-decoration: none;
+	font-family: 'Play', sans-serif;
+	color: #FDF8E9;
+	margin-top: 20px;
+}
+
+#about a:hover {
+	color: #FFD97F;
+}
 
 
 
