@@ -5,13 +5,13 @@
 			.one {
 				color: red;
 				font-family: sans-serif;
-				font-size: 20px;
+				font-size: 22px;
 			}
 
 			.two {
-				color: blue;
+				color: green;
 				font-family: sans-serif;
-				font-size: 20px;
+				font-size: 22px;
 			}
 
 		</style>
