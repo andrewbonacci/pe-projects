@@ -1,5 +1,3 @@
-@import 'meyer-reset.css';
-
 * { 
 	box-sizing: border-box;
 }
@@ -8,10 +6,6 @@ a {
 	display: block;
 	text-decoration: none;
 	color: inherit;
-}
-
-a p {
-	display: inline;
 }
 
 picture {
