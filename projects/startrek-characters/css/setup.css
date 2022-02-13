@@ -1,0 +1,23 @@
+* { 
+	box-sizing: border-box;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+picture {
+	display: block;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+em {
+	font-style: italic;
+}
