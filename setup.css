@@ -1,6 +1,4 @@
-@import 'meyer-reset.css';
-
-* {
+* { 
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
@@ -9,10 +7,6 @@ a {
 	display: block;
 	text-decoration: none;
 	color: inherit;
-}
-
-a p {
-	display: inline;
 }
 
 picture {

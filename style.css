@@ -1,5 +1,6 @@
-@import 'setup.css';
 @import 'meyer-reset.css';
+@import 'setup.css';
+
 
 body * {
 	/*border: 3px solid skyblue;*/

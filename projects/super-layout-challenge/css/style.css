@@ -1,6 +1,6 @@
 /* SETUP */
 
-@import 'reset.css';
+@import 'meyer-reset.css';
 
 * { 
 	box-sizing: border-box;
