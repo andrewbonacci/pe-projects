@@ -1,0 +1,36 @@
+
+mast-head {
+    display: flex;
+    flex-direction: column;
+}
+
+mast-head nav {
+  display: block;
+}
+
+mast-head .logo {
+  color: red;
+  max-width:  60px;
+}
+
+mast-head a {
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  padding:  10px;
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 500px) {
+  mast-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  mast-head nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+}

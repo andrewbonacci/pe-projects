@@ -1,0 +1,16 @@
+/* SETTINGS  ("variables" in our case) */
+html {
+	--black: hsl(242, 74%, 16%);
+	--white: hsl(193, 100%, 98%);
+	--color: hsl(213, 82%, 82%); 
+	--highlight: hsl(64, 100%, 74%);
+}
+/* you can make more! */
+
+
+
+/* USAGE */
+
+.thingy {
+	color:  var(--highlight); /* used as variable */
+}
