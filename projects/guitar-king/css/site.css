@@ -8,19 +8,25 @@ body {
 
 nav a {
 	text-decoration: underline;
+	padding: 10px;
 }
 
 nav {
 	display: flex;
 }
 
-nav a {
-	padding: 10px;
+.custom-shop {
+	margin-bottom: 20px;
+}
+
+.description {
+	margin: 20px 0px 20px 0px;
 }
 
 h1 {
 	font-size: 40px;
 }
+
 
 .page-content {
 
@@ -33,5 +39,25 @@ guitar-card {
 
 .guitar + .guitar {
 	margin-top: 30px;
+}
+
+field {
+	display: block;
+	flex-direction: column;
+}
+
+
+field :is(label, input) {
+	display: block;
+}
+
+field + field {
+
+	margin-top: 20px;
+}
+
+button {
+	display: block;
+	margin-top: 20px;
 }
 
