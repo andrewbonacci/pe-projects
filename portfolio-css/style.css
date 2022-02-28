@@ -1,0 +1,221 @@
+@import 'meyer-reset.css';
+@import 'setup.css';
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&display=swap');
+
+
+/* ----BORDER---- */
+
+body * {
+	/*border: 1px solid limegreen;*/
+}
+
+
+
+
+
+
+
+/* ----SETUP---- */
+
+body {
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+	color: hsl(180, 5%, 96%);
+	letter-spacing: 0.07em;
+	line-height: 1.4em;
+}
+
+.inner-column {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	background-color: hsl(201, 100%, 18%);
+}
+
+a:hover {
+	color: hsl(221, 100%, 60%);
+}
+
+
+
+
+
+
+
+/* ----NAV BAR STYLING---- */
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+nav a {
+	font-size: 22px;
+	padding: 5px;
+	margin: 15px;
+}
+
+
+
+
+
+
+
+/* ----LANDING STYLING---- */
+
+.landing {
+	background-color: hsl(201, 100%, 0%);
+}
+
+.landing-content {
+/*	border: 2px solid red;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 400px;
+	padding: 5px;
+}
+
+.tagline, .introduction {
+	text-align: center;
+	padding: 5px;
+}
+
+span {
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+/* ----PROJECTS SECTION STYLING---- */
+
+
+.projects {
+	background-color: hsl(201, 100%, 18%);
+	padding: 10px;
+	/*order: 2px solid green;*/
+}
+
+.projects h1 {
+	margin-top: 10px;
+}
+
+.projects-content {
+	/*border: 2px solid red;*/
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.projects-title, .links, .description {
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.projects-title {
+/*	padding: 10px;*/
+	/*margin-bottom: 40px;*/
+}
+
+.projects-background {
+	background-color: hsl(201, 100%, 0%);
+	margin-bottom: 40px;
+}
+
+.projects a {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	text-decoration: underline;
+}
+
+/*.projects a:hover {
+	background-color: ghostwhite;
+}*/
+
+.links {
+	margin-bottom: 40px;
+/*	border: 3px solid hsl(201, 100%, 18%);*/
+	border-radius: 20px;
+}
+
+
+
+
+/* ----WRITING SECTION STYLING---- */
+
+.writings {
+	background-color: hsl(201, 100%, 0%); /*black*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+}
+
+.writings-title {
+	text-align: center;
+	padding: 5px;
+	margin-bottom: 40px;
+	margin-top: 10px;
+}
+
+
+
+
+
+
+/* ----CONTACT SECTION STYLING---- */
+
+.contact {
+	background-color: hsl(201, 100%, 18%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+}
+
+.contact-title {
+	text-align: center;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+/* ----FOOTER STYLING---- */
+
+footer {
+	background-color: hsl(201, 100%, 0%);
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.energize {
+	text-align: center;
+	padding: 5px;
+}
+
+

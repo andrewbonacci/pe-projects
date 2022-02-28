@@ -1,3 +1,5 @@
+@import 'meyer-reset.css';
+
 * { 
 	box-sizing: border-box;
 	scroll-behavior: smooth;
@@ -9,6 +11,10 @@ a {
 	color: inherit;
 }
 
+a p {
+	display: inline;
+}
+
 picture {
 	display: block;
 }
@@ -17,6 +23,7 @@ img {
 	display: block;
 	width: 100%;
 	height: auto;
+	border-radius: 50%;
 }
 
 em {
