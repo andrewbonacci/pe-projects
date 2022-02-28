@@ -59,9 +59,9 @@
 
 							<h1 class='writings-title'>I like to write about my work and my life. Check out my blogs below.</h1>
 							<ul>
-								<li><a href='https://andrewbonacci.substack.com/'>Substack</a></li>
-								<li><a href='https://dev.to/abonacci'>Dev.to</a></li>
-								<li><a href='https://community.codenewbie.org/abonacci'>Codenewbie</a></li>
+								<li><a href='https://andrewbonacci.substack.com/' target='_blank'>Substack</a></li>
+								<li><a href='https://dev.to/abonacci' target='_blank'>Dev.to</a></li>
+								<li><a href='https://community.codenewbie.org/abonacci' target='_blank'>Codenewbie</a></li>
 							<ul>
 
 						</div>
