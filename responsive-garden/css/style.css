@@ -1,0 +1,98 @@
+@import 'setup.css';
+@import 'meyer-reset.css';
+
+
+
+body {
+	/*border: 2px solid red;*/
+	font-family: sans-serif;
+	letter-spacing: .1em;
+	line-height: 2em;
+	background-image: url(https://free4kwallpapers.com/uploads/originals/2017/08/08/stars--wallpaper.jpg);
+	color: white;
+}
+
+.inner-column {
+	/*border: 4px dashed green;*/
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+header {
+	padding: 15px;
+}
+header h1 {
+	text-align: center;
+}
+
+nav {
+	/*border: 3px solid black;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 10px;
+}
+
+nav a {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+
+.loud-voice {
+	padding: 5px;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.soft-voice {
+	padding: 5px;
+	font-weight: 200;
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+.module {
+	margin: 15px;
+}
+
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	/*border: 3px dotted black;*/
+
+}
+
+
+
+.module {
+	border: 3px solid white;
+	padding: 10px;
+}
+
+@media (min-width: 600px) {
+	.inner-column {
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.flex-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.flex-container .module {
+		width: 50%;
+	}
+}
