@@ -156,6 +156,21 @@ span {
 }
 
 
+/* ----BREAKPOINT ONE----
+ */
+@media (min-width: 800px) {
+
+
+
+	.projects-content {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex-basis: auto;
+		width: 400px;
+	}
+
+
 
 
 /* ----WRITING SECTION STYLING---- */

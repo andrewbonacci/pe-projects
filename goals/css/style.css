@@ -1,42 +1,59 @@
 @import 'setup.css';
 @import 'meyer-reset.css';
-
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap');
 
 * {
 	box-sizing: border-box;
 }
 
+body {
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(39,63,113,1) 49%, rgba(3,135,204,1) 100%, rgba(10,10,132,1) 100%, rgba(0,212,255,1) 100%);
+	color: hsl(0, 0%, 80%);
+	padding: 25px;
+	line-height: 1.5;
+	letter-spacing: .1em;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.module {
+	border: 2px solid hsl(0, 0%, 80%);
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(39,63,113,1) 49%, rgba(3,135,204,1) 100%, rgba(10,10,132,1) 100%, rgba(0,212,255,1) 100%);
+	border-radius: 10px;
+	max-width: 50vh;
+	padding: 5px;
+	margin-bottom: 3vh;
+}
 
 h1 {
-	font-family: sans-serif;
 	font-size: 35px;
-	font-weight: 700;
+	font-weight: 600;
 	padding: 5px;
 	padding-bottom: 10px;
 	max-width: 70ch;
 }
 
 h2 {
-	font-family: sans-serif;
 	font-size: 20px;
-	font-weight: 500;
+	font-weight: 400;
 	padding: 5px;
 	max-width: 70ch;
+	margin-bottom: 20px;
 }
 
 h3 {
-	font-family: sans-serif;
-	color: blue;
 	padding: 5px;
+	margin-bottom: 10px;
 	font-weight: 700;
 	font-size: 20px;
 	max-width: 70ch;
 }
 
 p {
-	font-family: sans-serif;
-	color: blue;
+	font-style: italic;
 	padding: 5px;
+	margin-bottom: 20px;
 	line-height: 1.4;
 	max-width: 70ch;
 }
@@ -47,5 +64,4 @@ ol {
 
 li {
 	padding: 20px 0px;
-
 }
