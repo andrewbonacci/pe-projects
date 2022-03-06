@@ -121,7 +121,7 @@ span {
 }
 
 .projects-content {
-	border: 2px solid red;
+	/*border: 2px solid red;*/
 	padding: 10px;
 	display: flex;
 	flex-direction: column;
@@ -263,13 +263,12 @@ footer {
 		line-height: 2em;
 	}
 
-	.projects-content {
+/*	.projects-content {
 		border: 3px solid limegreen;
 		max-width: 1000px;
 		display: flex;
 		flex-direction: row;
-
-	}
+	}*/
 
 }
 
