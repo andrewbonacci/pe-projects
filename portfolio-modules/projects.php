@@ -2,7 +2,6 @@
 
 <?php foreach ($projectsData as $project) { ?>
 	
-<div>	
 	<div class='projects-background'>	
 		<h1 class='projects-title'><?= $project["title"] ?></h1>
 		<picture>
@@ -11,7 +10,6 @@
 		<p class='description'><?= $project["description"] ?></p>
 		<a href="<?= $project["link"] ?>" class='links' target='_blank'>See It Here</a>
 	</div>
-</div>
 
 <?php } ?>
 

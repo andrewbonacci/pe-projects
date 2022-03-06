@@ -3,11 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&display=swap');
 
 
-/* ----BORDER---- */
-
-body * {
-	/*border: 1px solid limegreen;*/
+:root {
+	--darkblue: hsl(201, 100%, 18%);
+	--blue: hsl(196, 100%, 37%);
+	--black: hsl(201, 100%, 0%);
+	--darkwhite: hsl(180, 5%, 81%);
+	--lightwhite: hsl(180, 5%, 95%);
+	--bluehover: hsl(221, 100%, 60%);
 }
+
+
+
+
+
 
 
 
@@ -21,7 +29,7 @@ body {
 	font-family: 'Nunito Sans', sans-serif;
 	font-weight: 300;
 	font-size: 22px;
-	color: hsl(180, 5%, 96%);
+	color: var(--lightwhite);
 	letter-spacing: 0.07em;
 	line-height: 1.4em;
 }
@@ -33,11 +41,11 @@ body {
 }
 
 header {
-	background-color: hsl(201, 100%, 18%);
+	background-color: var(--darkblue);
 }
 
 a:hover {
-	color: hsl(221, 100%, 60%);
+	color: var(--bluehover);
 }
 
 
@@ -53,7 +61,7 @@ nav {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	height: 100px;
+	height: 5vh;
 }
 
 nav a {
@@ -71,7 +79,7 @@ nav a {
 /* ----LANDING STYLING---- */
 
 .landing {
-	background-color: hsl(201, 100%, 0%);
+	background-color: var(--black);
 }
 
 .landing-content {
@@ -79,8 +87,10 @@ nav a {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 400px;
+	height: 95vh;
 	padding: 5px;
+	font-size: 30px;
+	line-height: 1.7em;
 }
 
 .tagline, .introduction {
@@ -102,9 +112,8 @@ span {
 
 
 .projects {
-	background-color: hsl(201, 100%, 18%);
+	background-color: var(--darkblue);
 	padding: 10px;
-	/*order: 2px solid green;*/
 }
 
 .projects h1 {
@@ -112,11 +121,11 @@ span {
 }
 
 .projects-content {
-	/*border: 2px solid red;*/
+	border: 2px solid red;
 	padding: 10px;
 	display: flex;
 	flex-direction: column;
-	max-width: 500px;
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -128,12 +137,12 @@ span {
 }
 
 .projects-title {
-/*	padding: 10px;*/
-	/*margin-bottom: 40px;*/
+	font-weight: 700;
 }
 
+
 .projects-background {
-	background-color: hsl(201, 100%, 0%);
+	background-color: var(--black);
 	margin-bottom: 40px;
 }
 
@@ -145,9 +154,6 @@ span {
 	text-decoration: underline;
 }
 
-/*.projects a:hover {
-	background-color: ghostwhite;
-}*/
 
 .links {
 	margin-bottom: 40px;
@@ -156,21 +162,7 @@ span {
 }
 
 
-/* ----BREAKPOINT ONE----
- */
-@media (min-width: 800px) {
 
-
-
-	.projects-content {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		flex-basis: auto;
-		width: 400px;
-	}
-
-}
 
 
 
@@ -178,8 +170,8 @@ span {
 /* ----WRITING SECTION STYLING---- */
 
 .writings {
-	background-color: hsl(201, 100%, 0%); /*black*/
-	height: 400px;
+	background-color: var(--black); /*black*/
+	height: 50vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -188,10 +180,12 @@ span {
 }
 
 .writings-title {
+	font-weight: 700;
 	text-align: center;
 	padding: 5px;
 	margin-bottom: 40px;
 	margin-top: 10px;
+	font-weight: 700;
 }
 
 
@@ -202,8 +196,8 @@ span {
 /* ----CONTACT SECTION STYLING---- */
 
 .contact {
-	background-color: hsl(201, 100%, 18%);
-	height: 400px;
+	background-color: var(--darkblue);
+	height: 50vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -216,6 +210,7 @@ span {
 	padding: 5px;
 	margin-top: 10px;
 	margin-bottom: 40px;
+	font-weight: 700;
 }
 
 
@@ -227,8 +222,8 @@ span {
 /* ----FOOTER STYLING---- */
 
 footer {
-	background-color: hsl(201, 100%, 0%);
-	height: 100px;
+	background-color: var(--black);
+	height: 5vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -236,7 +231,92 @@ footer {
 
 .energize {
 	text-align: center;
+	font-weight: 700;
 	padding: 5px;
+}
+
+
+
+/* ----BREAKPOINT ONE----
+ */
+@media (min-width: 1200px) {
+
+	.inner-column {
+		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	nav a {
+		margin: 100px;
+		font-size: 30px;
+	}
+
+	.landing-content {
+/*	border: 2px solid red;*/
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 95vh;
+		padding: 5px;
+		font-size: 40px;
+		line-height: 2em;
+	}
+
+	.projects-content {
+		border: 3px solid limegreen;
+		max-width: 1000px;
+		display: flex;
+		flex-direction: row;
+
+	}
+
+}
+
+
+
+
+
+@media (prefers-color-scheme: light) {
+	:root {
+	--darkblue: hsl(201, 100%, 18%);
+	--blue: hsl(196, 100%, 37%);
+	--black: hsl(201, 100%, 0%);
+	--darkwhite: hsl(180, 5%, 81%);
+	--lightwhite: hsl(180, 5%, 95%);
+	--bluehover: hsl(221, 100%, 60%);
+}
+	header {
+		background-color: var(--blue);
+	}
+
+	.landing {
+		background-color: var(--lightwhite);
+		color: var(--black);
+	}
+
+	.projects {
+		background-color: var(--blue);
+	}
+
+	.writings {
+		background-color: var(--lightwhite);
+		color: var(--black);
+	}
+
+	.contact {
+		background-color: var(--blue);
+	}
+
+	footer {
+		background-color: var(--lightwhite);
+		color: var(--black);
+	}
+
+	.projects-background {
+		background-color: var(--lightwhite);
+		color: var(--black);
+	}
 }
 
 
