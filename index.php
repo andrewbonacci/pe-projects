@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang='en'>
 
-
 	<head>
 		<title>Andrew Bonacci - Web Developer</title>
 		<meta charset='utf-8'>
