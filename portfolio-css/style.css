@@ -16,22 +16,16 @@
 
 
 
-
-
-
-
-
-
-
 /* ----SETUP---- */
 
 body {
 	font-family: 'Nunito Sans', sans-serif;
 	font-weight: 300;
-	font-size: 22px;
+	font-size: 24px;
+	background-color: var(--darkblue);
+	letter-spacing: 0.05em;
+	line-height: 1.7em;
 	color: var(--lightwhite);
-	letter-spacing: 0.07em;
-	line-height: 1.4em;
 }
 
 .inner-column {
@@ -42,6 +36,11 @@ body {
 
 header {
 	background-color: var(--darkblue);
+	padding: 20px;
+}
+
+span {
+	font-weight: 600;
 }
 
 a:hover {

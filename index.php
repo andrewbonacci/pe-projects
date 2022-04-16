@@ -12,102 +12,12 @@
 
 	<body>
 
-	
-
-
-
-
 	<header>
-		<div id='beam-up'>
-			<div class='inner-column'>
-
-				<?php include('portfolio-modules/site-menu.php') ?>
-
-			</div>
-		</div>
+		<h1>Hello! My name is <span>Andrew Bonacci</span>. My website is being redesigned.</h1>
+		<h2>For questions or inquires regarding web development and consulting, please reach me at <span>abonacci@protonmail.com</span>.
+		<h2>Thank you!</h2>
 	</header>
-
-
-
-
-	<section class='landing'>
-		<div class='inner-column'>
-					
-			<?php include('portfolio-modules/landing.php') ?>
-
-		</div>	
-	</section>
-
-
-
-
-	<section class='projects'>
-		<div id="projects-scroll">
-			<div class='inner-column'>
-				<h1 class='projects-title'>Here is some of my work.</h1>
-				<div class='projects-content'>
-
-				<?php include('portfolio-modules/projects.php') ?>
-
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-
-
-	<section class='writings'>
-		<div id="writings-scroll">
-			<div class='inner-column'>
-				<div class='writings-content'>
-
-					<h1 class='writings-title'>I like to write about my work and my life. Check out my blogs below.</h1>
-
-					<ul>
-						<li><a href='https://andrewbonacci.substack.com/' target='_blank'>Substack</a></li>
-						<li><a href='https://dev.to/abonacci' target='_blank'>Dev.to</a></li>
-						<li><a href='https://community.codenewbie.org/abonacci' target='_blank'>Codenewbie</a></li>
-					<ul>
-
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-
-
-			<section class='contact'>
-				<div id="contact-scroll">
-					<div class='inner-column'>
-						<div class='contact-content'>
-
-							<h1 class='contact-title'>Let's work together.</h1>
-							<p>abonacci@protonmail.com</p>
-							<p>267.555.5555</p>
-
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-
-
-	<footer>
-		<div class='inner-column'>
-			<div class='footer-content'>
-
-				<a href="#beam-up" class='energize'>Beam Me Up!</a>
-
-			</div>
-		</div>
-	</footer>
-
-
-
-
+	
 	</body>
 
 </html>
