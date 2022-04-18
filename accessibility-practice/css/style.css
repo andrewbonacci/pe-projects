@@ -10,14 +10,34 @@
 	padding: 25px;
 }
 
+.visually-hidden { /* utility */
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+nav:focus-within .menu-toggle {
+	  clip: rect(0 0 0 0);
+	  clip-path: inset(50%);
+	  height: 1px;
+	  overflow: hidden;
+	  position: absolute;
+	  white-space: nowrap;
+	  width: 1px;
+}
+
 nav {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	font-weight: 100;
+	font-weight: 400;
 	font-family: sans-serif;
-	font-size: 0.8rem;
+	font-size: 1.1rem;
 	background-color: lightgray;
 }
 
@@ -115,11 +135,52 @@ em {
 
 /* ==BREAKPOINTS== */
 
-@media (min-width: 600px) {
-	nav {
-		font-size: 0.8rem;
+@media (max-width: 780px) {
+	nav:focus-within {
+/*		top: 10;
+		right: 10;
+		bottom: 10;
+		left: 10;*/
+		background-color: lightgray;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
+	nav:not(:focus-within) .link {
+	  clip: rect(0 0 0 0);
+	  clip-path: inset(50%);
+	  overflow: hidden;
+	  position: absolute;
+	}
+
+	button div {
+		width: 25px;
+	  height: 4px;
+	  background-color: black;
+	  margin: 5px 0;
+	}
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+@media (min-width: 781px) {
+	nav ul {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+	}
+	.menu-toggle {
+		display: none;
+	}
+}
+
+@media (min-width: 700px) {
 	header h1 {
 		width: 45vw;
 	}
@@ -129,13 +190,7 @@ em {
 	}
 }
 
-
-
 @media (min-width: 1000px) {
-		nav {
-		font-size: 0.9rem;
-	}
-
 	header h1 {
 		font-size: 2.5rem;
 		width: 40vw;
@@ -146,10 +201,9 @@ em {
 	}	
 }
 
-
-
 @media (min-width: 1200px) {
 	header h1 {
 		font-size: 2.7rem;
+		width: 40vw;
 	}	
 }
