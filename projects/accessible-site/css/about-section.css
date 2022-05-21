@@ -1,0 +1,60 @@
+.about {
+	border-radius: 8px;
+	backdrop-filter: blur(5px);
+	color: white;
+	background: rgba(0, 0, 0, 0.9);
+	box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	transition: transform .3s
+}
+
+.about:hover {
+	transform: scale(1.03);
+}
+
+.about h1 {
+	font-family: 'Skranji', cursive;
+	font-size: 1.25rem;
+}
+
+.about p {
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 1.5;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.about h1 + p {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.about h1 {
+	padding: 20px;
+}
+
+@media (min-width: 600px) {
+	.about h1 {
+		font-size: 1.5rem;
+	}
+
+	.about p {
+		font-size: 1.2;
+	}
+}
+
+@media (min-width: 900px) {
+	.about h1 {
+		font-size: 1.7rem;
+	}
+
+	.about p {
+		font-size: 1.4rem;
+	}
+}
